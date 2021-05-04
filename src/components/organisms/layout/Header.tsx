@@ -8,9 +8,9 @@ import { MenuDrawer } from "../../molecules/MenuDrawer";
 export const Header: VFC = memo(() => {
   const { isOpen, onOpen, onClose} = useDisclosure();
   const history = useHistory();
-  const onClickHome = useCallback(() => history.push("/home"), []);
-  const onClickUserManagement = useCallback(() => history.push("/home/user_management"), []);
-  const onClickSetting = useCallback(() => history.push("/home/setting"), []);
+  const onClickHome = useCallback(() => history.push("/home"), [history]);
+  const onClickUserManagement = useCallback(() => history.push("/home/user_management"), [history]);
+  const onClickSetting = useCallback(() => history.push("/home/setting"), [history]);
 
   return (
     <>
