@@ -16,7 +16,7 @@ export const UserManagement: VFC = memo(() => {
 
   const onClickUser = useCallback((id: number) => {
     onSlectUser({ id, users, onOpen});
-  },[users,onSlectUser, onOpen]);
+  },[ users, onSlectUser, onOpen]);
 
   return (
     <>

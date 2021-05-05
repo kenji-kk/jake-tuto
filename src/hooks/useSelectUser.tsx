@@ -8,11 +8,13 @@ type Props = {
   onOpen: () => void;
 }
 
+
 export const useSelectUser = () => {
   const [selectedUser, setSelectedUser] = useState<User | null>(null);
  
   const onSlectUser = useCallback((props: Props) => {
-    const { id, users,onOpen } = props; 
+    const { id, users, onOpen } = props; 
+    
     const targetUser = users.find((user) => user.id === id) 
     setSelectedUser(targetUser ?? null);
     onOpen()
