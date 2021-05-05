@@ -20,6 +20,6 @@ export const useAllUsers = () => {
     }).finally(() => {
       setloading(false)
     });
-  }, [useAllUsers])
+  }, [useAllUsers,showMessage])
   return { getUsers, loading, users }
 }
