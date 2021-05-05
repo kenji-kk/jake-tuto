@@ -30,6 +30,6 @@ export const useAuth = () => {
     setLoding(false);
     }
     )
-  }, [history, showMessage]);
+  }, [history, showMessage,setLoginUser]);
   return { login, loading, setLoginUser}
 }
