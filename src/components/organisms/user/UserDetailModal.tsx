@@ -1,7 +1,6 @@
 import { memo,  VFC } from "react";
 import {  FormControl, FormLabel, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, Stack,  } from "@chakra-ui/react";
 import { User } from "../../../types/api/user";
-import userEvent from "@testing-library/user-event";
 
 
 type Props = {
