@@ -7,7 +7,7 @@ import { useAllUsers } from "../../hooks/useAllUsers";
 export const UserManagement: VFC = memo(() => {
   const { getUsers, users, loading}  = useAllUsers();
 
-  useEffect(() => getUsers(), [])
+  useEffect(() => getUsers(), [getUsers])
   return (
     <>
       {loading ? (
